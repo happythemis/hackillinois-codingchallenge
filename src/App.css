@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  width: 100%;
+  max-width: 160px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+.Result {
+  margin-top: 30px;
+}
+
+.MentorMain {
+  padding-top: 90px;
+  border-radius: 10px;
+}
+
+.title-mentor {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 30px;
+  padding-left: 100px;
+  
+}
+
+
+.mentor-photo {
+  flex: 1;
+  width: 200px;
+  height: 200px;
+  align-content: center;
+  border: 1px solid transparent;
+  border-radius: 20px;
+
+}
+
+.scroll-content {
+  flex: 1;
+  background-color: rgba(52, 52, 52, 0.283);
+  overflow-y: scroll;
+  max-height: 60vh;
+  width: 90vw;
+  margin: 0 auto;
+  border-radius: 20px;
+
+}
+
+.container { 
+  overflow:hidden;
+  
+}
+
+.container div {
+   min-height: 200px;
+   padding: 10px;
+   
+}
+#mentor-image-box {
+  float:left; 
+  
+}
+#mentor-context-box { 
+  overflow:hidden;
+  margin:10px;
+  min-height:177px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+
+}
+
+@media screen and (max-width: 1000px) {
+  .title-mentor {
+    padding-left: 60px;
+
+  }
+
+}
+
+@media screen and (max-width: 780px) {
+   #mentor-image-box { 
+    float: none;
+  }
+
+  #mentor-context-box {
+    margin: 0px;
+
+  }
+
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    max-width: 100px;
   }
+
+  .title-mentor {
+    padding-left: 50px;
+
+  }
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
